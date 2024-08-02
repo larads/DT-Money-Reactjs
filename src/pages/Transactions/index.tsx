@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header.tsx"
 import { Summary } from "../../components/Summary/index.tsx";
+import { SearchForm } from "../../components/SearchForm/index.tsx";
 
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
 
@@ -11,6 +12,7 @@ export function Transactions() {
       <Summary />
 
       <TransactionsContainer>
+        <SearchForm />
         <TransactionsTable>
           <tbody>
             <tr>
